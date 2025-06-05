@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Doctors</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-image: url("images/bg.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header {
+            background-color: #ffffff;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .mainheader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo a {
+            text-decoration: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .hea2 {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .section_head {
+            margin-bottom: 50px;
+            color: #298294;
+        }
+
+        section {
+            flex-basis: 32%;
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #8ec7cf;
+            border-radius: 10px;
+        }
+
+        section h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        section h4 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .lsec button {
+            padding: 10px 50px;
+            text-align: center;
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+            border-radius: 20px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+        .lsec h3 {
+            font-size: x-large;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+        }
+
+        .rating h4 {
+            margin-right: 5px;
+        }
+
+        .rating i {
+            color: #f1c40f;
+            font-size: 20px;
+            margin-right: 2px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Header start -->
+    <header>
+        <div class="mainheader">
+            <div class="logo">
+                <a href="userpage.html">
+                    <img src="images/logo.png" alt="Logo">
+                </a>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+            <nav class="dropdown-menu" id="dropdown-menu">
+                <a href="userpage.html">Home</a>
+                <a href="categories.html">Categories</a>
+            </nav>
+        </div>
+        <div class="section_head">
+            <h1 class="hea2">List of doctors in Ranchi</h1>
+        </div>
+        <main>
+            <section>
+                <h1>Surgeons</h1>
+                <div>
+                    <h4>Hospital: XYZ Hospital</h4>
+                    <h4>Price: $100</h4>
+                    <div class="rating">
+                        <h4>Rating:</h4>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <h4>Dr. Sunil Kumar - General Surgery</h4>
+                <h4>Dr. Prerna Roy - General Surgery</h4>
+                <h4>Dr. Ravi Ranjan - General Surgery</h4>
+                <h4>Dr. Chandan Kumar - General Surgery</h4>
+                <h4>Dr. H S - General Surgery</h4>
+                <h4>Dr. Uday Kumar - General Surgery</h4>
+                <h4>Dr. Gobind Jaiswal - General Surgery</h4>
+                <h4>Dr. Om Prakash Shrivastava - General Surgery</h4>
+            </section>
+
+
+        </main>
+        <div class="logout-container">
+            <a href="index.html" class="logout-button">Logout</a>
+        </div>
+    </header>
+    <!-- Footer start -->
+    <footer>
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="footer-info">
+                        <h2>Search Doctors across Ranchi City</h2>
+                        <h3>Ranchi, Jharkhand</h3>
+                        <div class="footer-menu">
+                            <p>+91 7667406057</p>
+                            <p>ayushdonothing@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100011092299019" class="facebook-icon"
+                            target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/_torque__15/" class="instagram-icon" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ayush-ranjan-b8153b266/" class="linkedin-icon"
+                            target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/channel/UC72SbfrlZEnl1YmYIOhpSaw" class="youtube-icon"
+                            target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="container copyright">
+                        <p>&copy; <a href="userpage.html">The Doctor Search</a>, All Right Reserved | Designed By <a
+                                href="https://www.linkedin.com/in/ayush-ranjan-b8153b266/" target="_blank">Ayush
+                                Ranjan</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

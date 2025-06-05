@@ -1,0 +1,140 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainheader nav {
+  margin-right: 10px;
+}
+
+.container8 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button1 {
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  background-color: #155654;
+  transition: background-color 0.3s ease;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 5px;
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
+
+.button1:hover {
+  background-color: #123a3a;
+  transform: scale(1.05);
+}
+
+
+/* Set the body background and font styles */
+body {
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Center the doctor list */
+.doctor-list {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Add some style to the surgeon doctors header */
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 5px;
+  font-family: Arial, sans-serif;
+}
+
+/* Style each doctor container */
+.doctor {
+  background-color: #c2e3dd;
+  border: 1px solid #ece8e8;
+  padding: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}
+
+/* Style doctor name */
+.doctor h3 {
+  font-size: 20px;
+  color: #087480;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+}
+
+/* Style doctor specialization */
+.doctor p:nth-of-type(1) {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: Arial, sans-serif;
+}
+
+/* Style doctor experience */
+.doctor p:nth-of-type(2) {
+  font-size: 14px;
+  color: #434343;
+  margin-bottom: 5px;
+  font-family: Arial, sans-serif;
+}
+
+/* Style doctor clinic address */
+.doctor p:nth-of-type(3) {
+  font-size: 14px;
+  color: #434343;
+  margin-bottom: 5px;
+  font-family: Arial, sans-serif;
+}
+
+/* Style doctor consultation fee */
+.doctor p:nth-of-type(4) {
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+/* Add hover effect */
+.doctor:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Add margin between doctors */
+.doctor+.doctor {
+  margin-top: 20px;
+}
+
+
+/* Style the appointment button */
+
+.appointment-btn {
+  background-color: #155654;
+  color: #fff;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.appointment-btn:hover {
+  background-color: #123a3a;
+  transform: scale(1.05);
+}

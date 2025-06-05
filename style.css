@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background: radial-gradient(#fff, #51b4b3);
+}
+
+.mainheader {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #123a3a;
+}
+
+.mainheader .logo img {
+    width: 160px;
+    height: 55px;
+    margin-left: 80px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.mainheader nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 80px;
+}
+
+.mainheader nav a {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: rgb(224, 219, 219);
+    text-transform: uppercase;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+
+main .lsec {
+    padding-left: 90px;
+    color: rgb(51, 52, 52);
+}
+
+.lsec h1 {
+    font-size: 40px;
+    font-weight: 600;
+    padding-left: 8px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.lsec h2 {
+    font-size: 30px;
+    font-weight: 600;
+    padding-left: 8px;
+    margin-bottom: 20px;
+}
+
+
+
+.lsec button {
+    padding: 10px 45px;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    background-color: #155654;
+    border: none;
+    box-shadow: 0px 8px 15px #123a3ace;
+}
+
+.lsec button+button {
+    margin-left: 30px;
+}
+
+.lsec button:hover {
+    background-color: #123a3a;
+    color: white;
+    transform: scale(1.1);
+}
+
+.mainheader nav a:hover {
+    transition-duration: 0.10s;
+    color: rgb(100, 217, 180);
+    transform: scale(1.05);
+}
+
+
+.rsec img {
+    max-width: 600px;
+    height: 570px;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+/* Hamburger menu styles */
+
+.hamburger {
+    display: none;
+
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+/*-----footer style------*/
+
+.footer {
+    position: relative;
+    margin-top: 45px;
+    background: #123a3a;
+}
+
+.footer .container-fluid {
+    padding: 60px 0 0 0;
+}
+
+.footer .footer-info {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.footer .footer-info h2 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #bcbaba;
+}
+
+.footer .footer-info h3 {
+    margin-bottom: 25px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #bcbaba;
+}
+
+
+.footer .footer-menu p:last-child {
+    border: none;
+}
+
+.footer .copyright {
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.footer .copyright::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 2px;
+    top: 0;
+    left: 25%;
+    background: rgba(256, 256, 256, .2);
+}
+
+.footer .copyright p {
+    margin: 0;
+    color: #ffffff;
+}
+
+.footer .copyright .col-md-6:last-child p {
+    text-align: right;
+}
+
+.footer .copyright p a {
+    color: #b2b1b1;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.footer .copyright p a:hover {
+    color: #0e9878;
+}
+
+
+/*-----Categories style-----*/
+
+main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sec1 h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.sec2 h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.sec3 h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.sec4 h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.sec5 h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.sec6 h1 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.h1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/images/bg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 110%;
+}
+
+/********* Contact CSS *********/
+
+.contact {
+    position: relative;
+    width: 100%;
+    margin: 45px 0;
+    background: #18a4ca;
+}
+
+.contact .contact-form1 {
+    position: relative;
+    padding: 90px 0 90px 45px;
+    background: #addce9;
+}
+
+.contact .contact-form1 input {
+    color: #0b0b0b;
+    padding: 15px 0;
+    background: none;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(256, 256, 256, .5);
+}
+
+.contact .contact-form1 textarea {
+    color: #201919;
+    height: 90px;
+    padding: 15px 0;
+    background: none;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(256, 256, 256, .5);
+}
+
+.contact .contact-form1 .form-control::placeholder {
+    color: #030303;
+    opacity: 1;
+}
+
+.contact .contact-form1 .form-control:-ms-input-placeholder,
+.contact .contact-form1 .form-control::-ms-input-placeholder {
+    color: #060606;
+}
+
+.contact .contact-form1 .btn {
+    margin-top: 35px;
+    color: #368ec1;
+    background: #050404;
+    box-shadow: inset 0 0 0 50px #ffffff;
+}
+
+.contact .contact-form1 .btn:hover {
+    color: #000000;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 #ffffff;
+    border-color: #ffffff;
+}
+
+.contact .help-block ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 14px;
+    font-style: italic;
+    color: #000000;
+}
+
+/*-----contact end-----*/
+
+/*------logout button----------*/
+
+.logout-container {
+    position: absolute;
+    top: 80px;
+    right: 25px;
+}
+
+.logout-button {
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: #155654;
+    transition: background-color 0.3s ease;
+    color: #fff;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.logout-button:hover {
+    background-color: #123a3a;
+    transform: scale(1.1);
+}
+
+/*------Social fonts start----------*/
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 30px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #298294;
+    transform: scale(1.1);
+}
+
+.facebook-icon {
+    color: #3b5998;
+}
+
+.instagram-icon {
+    color: #c32aa3;
+}
+
+.linkedin-icon {
+    color: #0077b5;
+}
+
+.youtube-icon {
+    color: #c4302b;
+}
+
+/*------Social fonts start----------*/

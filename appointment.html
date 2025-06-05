@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+
+    .mainheader {
+      margin-bottom: 30px;
+    }
+
+    .mainheader nav {
+      margin-right: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #08453e;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      z-index: 1;
+      margin-top: 100px;
+    }
+
+    form {
+      max-width: 420px;
+      margin: 0 auto;
+      margin-top: 30px;
+      padding: 20px;
+      border-radius: 4px;
+      background: radial-gradient(#add2cd, #83c1c0);
+      box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.1),
+        0 8px 16px rgba(0, 0, 0, 0.1),
+        0 16px 32px rgba(0, 0, 0, 0.1);
+    }
+
+    fieldset {
+      margin-bottom: 20px;
+      border: none;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #123a3a;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="time"],
+    select {
+      width: 100%;
+      padding: 9px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #999999;
+      margin-bottom: 10px;
+    }
+
+    input[type="checkbox"] {
+      margin-top: 5px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      background-color: #155654;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 5px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #123a3a;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header start -->
+  <header>
+    <div class="mainheader">
+      <div class="logo">
+        <a href="userpage.html">
+          <img src="images/logo.png" alt="Logo">
+        </a>
+      </div>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+      <nav class="dropdown-menu" id="dropdown-menu">
+        <a href="userpage.html">Home</a>
+        <a href="categories.html">Categories</a>
+      </nav>
+    </div>
+
+    <h1>Book Appointment</h1>
+    <form action="appointment.php" method="POST">
+      <fieldset>
+        <legend>Patient Information</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" name="mobile" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Doctor Selection</legend>
+        <label for="doctor">Select Doctor:</label>
+        <select id="doctor" name="doctor" required>
+          <option value="">Select a doctor...</option>
+          <option value="Dr. R. N. Singh">Dr. R. N. Singh</option>
+          <option value="Dr. Ajay Kumar">Dr. Ajay Kumar</option>
+          <option value="Dr. P. Kumari Nag">Dr. P. Kumari Nag</option>
+          <option value="Dr. Sanjay Kumar">Dr. Sanjay Kumar</option>
+          <option value="Dr. Amiy Arnav">Dr. Amiy Arnav</option>
+          <option value="Dr. Rajesh Kumar Singh">Dr. Rajesh Kumar Singh</option>
+          <option value="Dr. Suresh Kumar Agarwalla">Dr. Suresh Kumar Agarwalla</option>
+          <option value="Dr. Sunil Kumar Singh">Dr. Sunil Kumar Singh</option>
+          <option value="Dr. Prashanta Kumar Sen Gupta">Dr. Prashanta Kumar Sen Gupta</option>
+          <option value="Dr. Avinash Kumar">Dr. Avinash Kumar</option>
+          <option value="Dr. Gurinder Kaur">Dr. Gurinder Kaur</option>
+          <option value="Dr. Kunal Banka">Dr. Kunal Banka</option>
+          <option value="Dr. Bhaskar Lal">Dr. Bhaskar Lal</option>
+          <option value="Dr. Archana Singh">Dr. Archana Singh</option>
+          <option value="Dr. Arunima Mukherjee">Dr. Arunima Mukherjee</option>
+          <option value="Dr. Virul Shrivastava">Dr. Virul Shrivastava</option>
+          <option value="Dr. Shruti Singh">Dr. Shruti Singh</option>
+          <option value="Dr. Rajni Lal">Dr. Rajni Lal</option>
+          <option value="Dr. Neeraj Pahlajani">Dr. Neeraj Pahlajani</option>
+          <option value="Dr. Sathi Rani Sarkar">Dr. Sathi Rani Sarkar</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Appointment Details</legend>
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Preferred Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Terms and Conditions</legend>
+        <label for="terms">I have read and agree to the terms and conditions:</label>
+        <input type="checkbox" id="terms" name="terms" required>
+      </fieldset>
+
+      <input type="submit" value="Submit Appointment Request">
+    </form>
+
+    <!----Footer start----->
+    <footer>
+      <div class="footer wow fadeIn" data-wow-delay="0.3s">
+        <div class="container-fluid">
+          <div class="container">
+            <div class="footer-info">
+              <h2>Search Doctor's across Ranchi City</h2>
+              <h3>Ranchi, Jharkhand</h3>
+            </div>
+          </div>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100011092299019" class="facebook-icon" target="_blank"><i
+                class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/_torque__15/" class="instagram-icon" target="_blank"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/ayush-ranjan-b8153b266/" class="linkedin-icon" target="_blank"><i
+                class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/channel/UC72SbfrlZEnl1YmYIOhpSaw" class="youtube-icon" target="_blank"><i
+                class="fab fa-youtube"></i></a>
+          </div>
+
+
+          <div class="container copyright">
+            <p>&copy; <a href="index.html">The Doctor Search</a>, All Right Reserved | Designed By <a
+                href="https://www.linkedin.com/in/ayush-ranjan-b8153b266/" target="_blank">Ayush Ranjan</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!----Footer end----->
+    <div class="logout-container">
+      <a href="index.html" class="logout-button">Logout</a>
+    </div>
+</body>
+
+</html>

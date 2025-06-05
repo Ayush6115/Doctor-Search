@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. search</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <link rel="stylesheet" href="categories.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<!-- Header start -->
+<header>
+    <div class="mainheader">
+        <div class="logo">
+            <a href="userpage.html">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <nav class="dropdown-menu" id="dropdown-menu">
+            <a href="userpage.html">Home</a>
+            <a href="categories.html">Categories</a>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <div class="container8">
+        <button class="button1" onclick="toggleList('')">All</button>
+        <button class="button1" onclick="toggleList('surgeon')">Surgeon</button>
+        <button class="button1" onclick="toggleList('physician')">Physician</button>
+        <button class="button1" onclick="toggleList('dentist')">Dentist</button>
+        <button class="button1" onclick="toggleList('gynecologist')">Gynecologist</button>
+    </div>
+
+    <div class="doctor-list" id="surgeon-list" style="display: block;">
+        <h2>Surgeon Doctors</h2>
+
+        <div class="doctor">
+            <h3>Dr. R. N. Singh</h3>
+            <p>General Surgeon</p>
+            <p>49 years experience overall</p>
+            <p>Argora, Ranchi, Balajee Nursing Home </p>
+            <p>₹400 Consultation fee at clinic</p>
+            <button class="appointment-btn" onclick="location.href='appointment.html'">Book Appointment</button>
+        </div>
+
+        <div class="doctor">
+            <h3>Dr. Ajay Kumar</h3>
+            <p>General Surgeon</p>
+            <p>25 years experience overall</p>
+            <p>Hehal, Ranchi, Singhal Surgical Hospital</p>
+            <p>₹400 Consultation fee at clinic</p>
+            <button class="appointment-btn" onclick="location.href='appointment.html'">Book Appointment</button>
+        </div>
+
+        <div class="doctor">
+            <h3>Dr. P. Kumari Nag</h3>
+            <p>General Surgeon</p>
+            <p>35 years experience overall</p>
+            <p>Kanke, Ranchi, The Medicare Health Clinic</p>
+            <p>₹200 Consultation fee at clinic</p>
+            <button class="appointment-btn" onclick="location.href='appointment.html'">Book Appointment</button>
+        </div>
+
+        <div class="doctor">
+            <h3>Dr. Sanjay Kumar</h3>
+            <p>General Surgeon</p>
+            <p>21 years experience overall</p>
+            <p>Irba, Ranchi, Medanta Hospital</p>
+            <p>₹1000 Consultation fee at clinic</p>
+            <button class="appointment-btn" onclick="location.href='appointment.html'">Book Appointment</button>
+        </div>
+
+        <div class="doctor">
+            <h3>Dr. Amiy Arnav</h3>
+            <p>General Surgeon</p>
+            <p>6 years experience overall</p>
+            <p>Doranda, Ranchi, Gurunanak Hospital And Research Centre</p>
+            <p>₹500 Consultation fee at clinic</p>
+            <button class="appointment-btn" onclick="location.href='appointment.html'">Book Appointment</button>
+        </div>
+
+    </div>
+
+    <div class="doctor-list" id="physician-list">
+        <h2>Physician Doctors</h2>
+
+        <div class="doctor">
+            <h3>Dr. Rajesh Kumar Singh</h3>
+            <p>General Physician</p>
+            <p>17 years experience overall</p>
+            <p>Bariatu, Ranchi, Bhagwan Mahavir Medica Superspecialty Hospital</p>
+            <p>₹600 Consultation fee at clinic</p>
+            <button class="appointment-btn" onclick="location.href='appointment.html'">Book Appointment</button>
+        </div>
+
+        <div class="doctor">
+            <h3>Dr. Suresh Kumar Agarwalla</h3>
+            <p>General Physician</p>
+            <p>38 years experience overall</p>
+            <p>Lalpur, Ranchi, Amrita Family Health Centre</p>
+            <p>₹400 Consultation fee at clinic</p>
+            <button class="appointment-btn" onclick="location.href='appointment.html'">Book Appointment</button>
+        </div>
+
+        <div class="doctor">
+            <h3>Dr. Sunil Kumar Singh</h3>
+            <p>General Physician</p>
+            <p>28 years experience overall</p>
+            <p>Harmu Housing Colony, Ranchi, Shyam Medical Hall</p>
+            <p>₹500 Consultation fee at clinic</p>
+            <button class="appointment-btn" onclick="location.href='appointment.html'">Book Appointment</button>
+        </div>
+
+        <div class="doctor">
+            <h3>Dr. Prashanta Kumar Sen Gupta</h3>
+            <p>General Physician</p>
+            <p>43 years experience overall</p>
+            <p>Chutia, Ranchi, Dr. P.K Sen Gupta Clinic </p>
+            <p>₹200 Consultation fee at clinic</p>
+            <button class="appointment-btn" onclick="location.href='appointment.html'">Book Appointment</button>
+        </div>
+
+        <div class="doctor">
+            <h3>Dr. Avinash Kumar</h3>
+            <p>General Physician</p>
+            <p>15 years experience overall</p>
+            <p>Morabadi, Ranchi, Avishka HealthCare - Medical, Dental And Diabetes Centre</p>
+            <p>₹400 Consultation fee at clinic</p>
+            <button class="appointment-btn" onclick="location.href='appointment.html'">Book Appointment</button>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="doctor-list" id="dentist-list">
+        <h2>Dentist Doctors</h2>
+
+        <div class="doctor">
+            <h3>Dr. Gurinder Kaur</h3>
+            <p>Dentist</p>
+            <p>17 years experience overall</p>
+            <p>Morabadi, Ranchi, Dr. Kaur's True Pearls Dental Care Clinic</p>
+            <p>₹500 Consultation fee at clinic</p>
+            <button class="appointment-btn" onclick="location.href='appointment.html'">Book Appointment</button>
+        </div>
+
+
+        <div class="doctor">
+            <h3>Dr. Kunal Banka</h3>
+            <p>Dentist</p>
+            <p>17 years experience overall</p>
+            <p>Sn Ganguly Road, Ranchi, D-Mall Dental Clinic</p>
+            <p>₹600 Consultation fee at clinic</p>
+            <button class="appointment-btn" onclick="location.href='appointment.html'">Book Appointment</button>
+        </div>
+
+        <div class="doctor">
+            <h3>Dr. Bhaskar Lal</h3>
+            <p>Dentist</p>
+            <p>12 years experience overall</p>
+            <p>Lalpur, Ranchi, Dental Solutions</p>
+            <p>₹150 Consultation fee at clinic</p>
+            <button class="appointment-btn" onclick="location.href='appointment.html'">Book Appointment</button>
+        </div>
+
+        <div class="doctor">
+            <h3>Dr. Archana Singh</h3>
+            <p>Dentist</p>
+            <p>17 years experience overall</p>
+            <p>Deputy Para, Ranchi, Complete Oro Dental Solution (CODS)</p>
+            <p>₹200 Consultation fee at clinic</p>
+            <button class="appointment-btn" onclick="location.href='appointment.html'">Book Appointment</button>
+        </div>
+
+        <div class="doctor">
+            <h3>Dr. Arunima Mukherjee</h3>
+            <p>Dentist</p>
+            <p>17 years experience overall</p>
+            <p>Kanke, Ranchi, Esthetix Dental</p>
+            <p>₹300 Consultation fee at clinic</p>
+            <button class="appointment-btn" onclick="location.href='appointment.html'">Book Appointment</button>
+        </div>
+
+    </div>
+
+
+
+    <div class="doctor-list" id="gynecologist-list">
+        <h2>Gynecologist Doctors</h2>
+
+        <div class="doctor">
+            <h3>Dr. Virul Shrivastava</h3>
+            <p>Gynecologist/Obstetrician</p>
+            <p>5 years experience overall</p>
+            <p>Harmu Housing Colony, Ranchi, Indira IVF - Fertility and IVF Center </p>
+            <p>₹300 Consultation fee at clinic</p>
+            <button class="appointment-btn" onclick="location.href='appointment.html'">Book Appointment</button>
+        </div>
+
+
+        <div class="doctor">
+            <h3>Dr. Shruti Singh</h3>
+            <p>Gynecologist/Obstetrician</p>
+            <p>11 years experience overall</p>
+            <p>Bariatu, Ranchi, Oasis Fertility</p>
+            <p>₹700 Consultation fee at clinic</p>
+            <button class="appointment-btn" onclick="location.href='appointment.html'">Book Appointment</button>
+        </div>
+
+        <div class="doctor">
+            <h3>Dr. Rajni Lal</h3>
+            <p>Gynecologist/Obstetrician</p>
+            <p>33 years experience overall</p>
+            <p>Ratu, Ranchi, Lal Nursing Home</p>
+            <p>₹200 Consultation fee at clinic</p>
+            <button class="appointment-btn" onclick="location.href='appointment.html'">Book Appointment</button>
+        </div>
+
+
+        <div class="doctor">
+            <h3>Dr. Neeraj Pahlajani</h3>
+            <p>Gynecologist/Obstetrician</p>
+            <p>20 years experience overall</p>
+            <p>Ranchi Medical College Campus, Ranchi, Aveta Test Tube Baby Center Ranchi </p>
+            <p>₹400 Consultation fee at clinic</p>
+            <button class="appointment-btn" onclick="location.href='appointment.html'">Book Appointment</button>
+        </div>
+
+
+        <div class="doctor">
+            <h3>Dr. Sathi Rani Sarkar</h3>
+            <p>Gynecologist/Obstetrician</p>
+            <p>35 years experience overall</p>
+            <p>Nibaranpur, Ranchi, R C Clinic</p>
+            <p>₹300 Consultation fee at clinic</p>
+            <button class="appointment-btn" onclick="location.href='appointment.html'">Book Appointment</button>
+        </div>
+
+
+    </div>
+
+    <!----Footer start----->
+    <footer>
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="footer-info">
+                        <h2>Search Doctor's across Ranchi City</h2>
+                        <h3>Ranchi, Jharkhand</h3>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100011092299019" class="facebook-icon"
+                        target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/_torque__15/" class="instagram-icon" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ayush-ranjan-b8153b266/" class="linkedin-icon"
+                        target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.youtube.com/channel/UC72SbfrlZEnl1YmYIOhpSaw" class="youtube-icon"
+                        target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+
+
+                <div class="container copyright">
+                    <p>&copy; <a href="index.html">The Doctor Search</a>, All Right Reserved | Designed By <a
+                            href="https://www.linkedin.com/in/ayush-ranjan-b8153b266/" target="_blank">Ayush Ranjan</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!----Footer end----->
+    <div class="logout-container">
+        <a href="index.html" class="logout-button">Logout</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
